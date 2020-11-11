@@ -24,10 +24,10 @@ You can add a new variable for a base map following the structure of the example
 */
 
 var landscape = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
-	attribution: 'Tiles from Thunderforest'}).addTo(map);
+	attribution: 'Tiles from Thunderforest'});
 
 var toner = L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>' });
-	toner; 
+	toner.addTo(map); 
 	
 var hillshade = L.tileLayer('http://c.tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png');
 
